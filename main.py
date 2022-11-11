@@ -11,12 +11,14 @@ logging.basicConfig(filename=logName, filemode='w',
 detector = UniversalDetector()
 
 if __name__ == "__main__":
-    working_directory = "E:/DELL_BACKUP/Backup_20221109/tfs/tfsPRD-Domino"
+    working_directory = "."
     for (root,dirs,files) in os.walk(working_directory, topdown=True):
         # for name in dirs:
         #     print(os.path.join(root, name))
         for name in files:
-            includes = ['.sql', '.cs', 'js', 'xml', 'css', 'csv', 'txt', 'config', 'cshtml','datasource','ps1','xaml', 'java', 'bat','ini','jsp','md','xsd','aspx','ts','resx']
+            includes = ['.sql','.cs','.js','.xml','.css','.csv','.txt','.config','.cshtml','.datasource','.ps1','.xaml','.java','.bat','.ini','.jsp','.md','.xsd','.aspx','.ts','.resx'
+                       '.jspf'
+            ]
 
             file_path = Path(os.path.join(root, name))
 
