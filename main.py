@@ -16,8 +16,10 @@ if __name__ == "__main__":
         # for name in dirs:
         #     print(os.path.join(root, name))
         for name in files:
-            includes = ['.sql','.cs','.js','.xml','.css','.csv','.txt','.config','.cshtml','.datasource','.ps1','.xaml','.java','.bat','.ini','.jsp','.md','.xsd','.aspx','.ts','.resx'
-                       '.jspf'
+            includes = ['.sql','.cs','.js','.xml','.css','.csv',
+                        '.txt','.config','.cshtml','.datasource',
+                        '.ps1','.xaml','.java','.bat','.ini','.jsp',
+                        '.md','.xsd','.aspx','.ts','.resx','.jspf'
             ]
 
             file_path = Path(os.path.join(root, name))
